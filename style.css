@@ -1,0 +1,21 @@
+body {
+    background-color:#070F2B ;
+    color: #070F2B;
+}
+
+div {
+    background-color: #535C91;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; ;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.first-list{
+list-style: none;
+padding: auto;
+display: flex;
+flex-direction: row;
+
+}
