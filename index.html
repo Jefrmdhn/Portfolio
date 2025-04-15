@@ -37,13 +37,44 @@
       </div>
     </section>
   <section>
-    <h2>Get in touch</h2>
+    <h2>Contact Me</h2>
     <div class="social-links">
       <a href="#"><span>Linkedin: Jefrmdhn</span></a>
       <a href="#"><span>E-mail: Jefrmdhn@gmail.com</span></a>
     </div>
   </section>
   </main>
-  
+  <script>
+    // Typing animation
+    const roles = ["Junior Web Developer", "Tech Enthusiast"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    const typingElement = document.querySelector('.typing');
+    let isDeleting = false;
+
+    function type() {
+        const currentRole = roles[roleIndex];
+        if (!isDeleting && charIndex <= currentRole.length) {
+            typingElement.textContent = "Jefri Ramadhan - " + currentRole.slice(0, charIndex);
+            charIndex++;
+            setTimeout(type, 100);
+        } else if (isDeleting && charIndex >= 0) {
+            typingElement.textContent = "Jefri Ramadhan - " + currentRole.slice(0, charIndex);
+            charIndex--;
+            setTimeout(type, 50);
+        } else if (!isDeleting && charIndex > currentRole.length) {
+            isDeleting = true;
+            setTimeout(type, 1000);
+        } else if (isDeleting && charIndex < 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(type, 200);
+        }
+    }
+
+    type();
+</script>
+
 </body>
+
 </html>

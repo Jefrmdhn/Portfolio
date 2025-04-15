@@ -30,7 +30,7 @@ header .typing::after {
   content: '|';
   animation: blink 0.7s infinite;
   position: absolute;
-  right: 10px;
+  right: -10px;
 }
 
 header p {
