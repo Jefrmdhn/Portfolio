@@ -1,73 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jefri Ramadhan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <div class="nav-container">
-    <div class="logo">Jefrmdhn</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">MyProject</a></li>
-      <li><a href="#">AboutMe</a></li>
-    </ul>
-    <div class="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </div>
-</nav>
-
   <header>
-    <h1>Hi, I'm Jefri Ramadhan</h1>
+    <h1><span class="typing">Jefri Ramadhan</span></h1>
     <p>Junior Web Developer</p>
   </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate junior web developer who loves building interactive websites.
-      I specialize in HTML, CSS, and JavaScript.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>To-Do App</h3>
-        <p>A simple to-do list made with JavaScript.</p>
-        <a href="To_Do_app/todoapp.html"><button>To the page</button></a>
+  <main>
+    <Section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate junior web developer who loves building interactive websites.
+        pecializing in HTML, CSS, and JavaScript.</p>
+    </Section>
+    <section>
+      <div id="skills" class="skills">
+        <h2>Technical skills</h2>
+        <div class="skills-grid">
+          <div class="skills-item">
+            <h3>HTML</h3>
+          </div>
+          <div class="skills-item">
+            <h3>CSS</h3>
+          </div>
+          <div class="skills-item">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skills-item">
+            <h3>Node.js</h3>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>This very website — built with love and clean code!</p>
-        <a href="introduction/introduction.html"><button>to the page</button></a>
-      </div>
+    </section>
+  <section>
+    <h2>Get in touch</h2>
+    <div class="social-links">
+      <a href="#"><span>Linkedin: Jefrmdhn</span></a>
+      <a href="#"><span>E-mail: Jefrmdhn@gmail.com</span></a>
     </div>
   </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <form action="https://formspree.io/f/xpwpobla" method="POST">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </form>
-  </section>
-
-  <footer>
-    <p>© Jefri Ramadhan | All rights reserved</p>
-  </footer>
-
-  <script src="Script.js"></script>
+  </main>
+  
 </body>
 </html>
