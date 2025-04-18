@@ -120,4 +120,13 @@ section h2::after {
   color: #203a43;
 }
 
+li {
+  color: black;
+}
 
+footer {
+  background-color: #2c5364;
+  color: #fafafa;
+  padding-left: 2rem;
+  margin: 2px;
+}
